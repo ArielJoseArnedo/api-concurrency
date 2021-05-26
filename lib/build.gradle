@@ -5,10 +5,12 @@ plugins {
 repositories {
     mavenCentral()
 }
+def lombokVersion = "1.18.12"
 
 dependencies {
+    implementation "org.projectlombok:lombok:$lombokVersion"
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
     implementation "io.vavr:vavr:0.10.3"
-    implementation "org.projectlombok:lombok:1.18.12"
     implementation 'org.jetbrains:annotations:20.1.0'
     testImplementation "org.junit.jupiter:junit-jupiter-api:5.6.2"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
