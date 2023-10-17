@@ -2,4 +2,4 @@ Api-Concurrency
 ======================
 
 ### Description
-This library contains the base entities to implement a CQPS component.
+This library uses the abstraction of a Future and the 'Either' structure of vavr.io to manage asynchronous operations and handle possible success or failure outcomes efficiently and elegantly in a program.
