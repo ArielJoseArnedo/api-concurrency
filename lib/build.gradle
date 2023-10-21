@@ -9,13 +9,8 @@ group = 'co.com.ajac'
 repositories {
     mavenCentral()
 }
-def lombokVersion = "1.18.26"
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
-    }
-}
+def lombokVersion = "1.18.26"
 
 dependencies {
     compileOnly "org.projectlombok:lombok:$lombokVersion"
