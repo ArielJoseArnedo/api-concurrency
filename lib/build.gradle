@@ -1,7 +1,6 @@
 plugins {
     id 'java'
     id 'java-library'
-    id 'maven-publish'
 }
 
 version = '2.0.0'
@@ -25,18 +24,6 @@ dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-api:5.6.2"
     testImplementation 'org.assertj:assertj-core:3.22.0'
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
-}
-
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId = group
-            artifactId = rootProject.name
-            version = version
-
-            from components.java
-        }
-    }
 }
 
 tasks.named('test') {
