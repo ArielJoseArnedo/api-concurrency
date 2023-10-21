@@ -26,6 +26,13 @@ dependencies {
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
 }
 
+tasks.named('jar') {
+    manifest {
+        attributes("Implementation-Title": project.name,
+                "Implementation-Version": version)
+    }
+}
+
 tasks.named('test') {
     useJUnitPlatform()
 }
